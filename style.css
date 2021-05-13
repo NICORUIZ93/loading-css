@@ -1,0 +1,51 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+.container {
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.azul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  height: 100px;
+  width: 100px;
+  border: transparent 5px solid;
+  border-top-color: thistle;
+  border-radius: 50%;
+  animation: animacion2 1.6s ease-out infinite;
+}
+
+.rojo {
+  height: 50%;
+  width: 50%;
+  border: transparent 5px solid;
+  border-top-color: yellow;
+  border-radius: 50%;
+  animation: animacion2 1.6s ease-out infinite;
+}
+
+@keyframes animacion1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animacion2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
